@@ -1,8 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3.92.2'
-            label 'my-defined-label'
+            image 'maven:3.9'
             args '-v /root/.m2:/root/.m2'
         }
     }
